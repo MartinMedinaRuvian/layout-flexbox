@@ -5,7 +5,7 @@
 }
 
 body{
-    width: 80%;
+    width: 85%;
     margin: auto;
 }
 
@@ -51,7 +51,13 @@ footer{
 }
 
 @media screen and (max-width: 700px){
-    nav, .row{
+    .row{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px){
+    nav {
         flex-direction: column;
     }
 }
