@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    width: 80%;
+    margin: auto;
+}
+
+header{
+    padding: 50px;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    background-color: #212121;
+}
+
+nav a{
+    color: #fff;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside{
+    flex: 40%;
+    background-color: beige;
+    padding: 20px;
+}
+
+.row section{
+    flex: 60%;
+    background-color: khaki;
+    padding: 20px;
+}
+
+footer{
+    padding: 20px;
+    text-align: center;
+    background-color: palevioletred;
+}
+
+@media screen and (max-width: 700px){
+    nav, .row{
+        flex-direction: column;
+    }
+}
